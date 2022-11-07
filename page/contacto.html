@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------ LINK CSS BOOTSTRAP -------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../iconos/icono medicina.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header class="contenido__header container-fluid fixed-top px-5">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="img__logo img-fluid"
+            src="../../Logomedicos.jpg"
+            alt="logo"
+            width="100"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item fs-4 px-4">
+              <a class="nav__link" href="../../index.html">Inicio</a>
+            </li>
+            <li class="nav-item fs-4 px-4">
+              <a class="nav__link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item fs-4 px-4">
+              <a class="nav__link" href="./especialidades.html"
+                >Especialidades</a
+              >
+            </li>
+            <li class="nav-item fs-4 px-4">
+              <a class="nav__link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item fs-4 px-4">
+              <a class="nav__link" href="./como-funciona.html">Como Funciona</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="info__container">
+        <div class="info__description">
+          <p>Accede a nuestros servicios, de manera Rápida, Eficaz y Económica.</p>
+          <p>* Sin perdidas de tiempo.</p>
+          <p>* Sin Riesgos.</p>
+          <p>* Con o sin Obra Social.</p>
+          <p>Nuestros medicos cuentan con una amplia experiencia y gran capacidad
+            resolutiva.</p> 
+        </div>
+        <div class="info__registro">
+          <p class="info__registro--titulo">
+            Registrate y comenza a utilizar nuestros servicios.
+          </p>
+          <button class="info__registro--btn">Registrate</button>
+        </div>
+      </section>
+      
+      <section  class="d-lg-flex gap-5 w-100">
+        <div class="contacto__container py-5 w-50">
+          <h1 class="contacto__title py-2 text-center">CONTACTO</h1>
+          <form
+            class="text-black text-center d-flex flex-column fs-3 px-3 py-3 bg-light border border-primary rounded-5"
+            action=""
+          >
+            <label for="nombre">Nombre y apellido:</label>
+
+            <input type="text" name="nombre" id="nombre" />
+
+            <label for="email">Email:</label>
+
+            <input type="text" name="email" id="email" />
+
+            <label for="telefono">Telefono:</label>
+
+            <input type="text" name="telefono" id="telefono" />
+            <label for="mensaje">Mensaje</label>
+
+            <textarea
+              class="mb-5 h-25 contacto__area"
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="10"
+
+            ></textarea>
+
+            <input class="py-1 px-4 rounded-5" type="submit" value="Enviar" />
+          </form>
+        </div>
+        <div class="preguntas__container px-2 py-5 pb-3 w-50">
+          <h2 class="text-danger preguntas__title fs-1 fw-bold">Preguntas Frecuentes</h2>
+          <p class="fw-bold fs-4">¿El pago es mensual?</p>
+          <p class="fs-4">No, no somos una prepaga.</p>
+          <p class="fw-bold fs-4">¿Necesito tener obra social, para solicitar el servicio?</p>
+          <p class="fs-4">No, no trabajamos ni pertenecemos a ninguna obra social.</p>
+          <p class="fw-bold fs-4">¿La consulta puede ser presencial?</p>
+          <p class="fs-4">
+            No, todas las consultas se realizan de manera virtual, ingresando
+            fecha y hora al truno solicitado
+          </p>
+          <p class="fw-bold fs-4">¿El doctor puede realizar recetas medicas?</p>
+          <p class="fs-4">Si, luego de terminada la consulta se realiza la receta.</p>
+        </div>
+      </section>
+
+    </main>
+    <footer class="text-center d-lg-flex flex-column py-2">
+      <div class="d-lg-flex justify-content-around">
+        <div class="footer__terminos d-flex justify-content-around pb-3">
+          <a class="footer__terminos--item mx-5" href="#"
+            >Política de privacidad</a
+          >
+          <a class="footer__terminos--item" href="#">Términos de uso</a>
+        </div>
+        <div class="footer-iconos d-flex justify-content-around">
+          <p class="mx-3">Contacta con nosotros</p>
+          <div>
+            <a href="#"><i class="fa-brands fa-whatsapp mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook mx-2"></i></a>
+            <a href="#"><i class="fa-solid fa-phone mx-2"></i> 351373700</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-copy">
+        @Copyright 2022 Servicios Médicos Online Para Todos tiene Todos los
+        derechos reservados
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
