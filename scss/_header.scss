@@ -1,0 +1,33 @@
+header {
+  top: 0;
+  z-index: 2;
+  position: sticky;
+  padding: 1.5%;
+  background: $backg-color;
+  .container {
+    text-align: center;
+    @include flex-col-center;
+    &__logo {
+            &--img {
+        width: 50%;
+        height: 60px;
+             }
+    }
+    .nav {
+      &__list {
+        @include flex-content (space-around);
+        &--items {
+          padding: 0.5rem;
+          list-style: none;
+          &-li {
+            text-decoration: none;
+            color: map-get($text-color, text-1);
+               &:hover {
+              color: $hover-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

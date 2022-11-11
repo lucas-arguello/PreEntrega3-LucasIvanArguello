@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    /*background: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
+      ),
+      url(../imagenes/fondo.jpg);
+  
+    background-position: center 20%;
+    background-position-x: center;
+    background-position-y: 20%;
+    background-size: cover;*/
+    color:white;
+    background: rgb(194, 224, 149);
+    margin: 0;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-position-x: center;
+    background-position-y: 20%;
+    background-size: cover;
+    padding: 5%;
+    display: grid;
+  }

@@ -1,0 +1,30 @@
+@mixin boton-2 ($padding, $font-size, $font-weight, $border-radius)
+{
+padding: $padding;
+font-size: $font-size;
+font-weight: $font-weight;
+border-radius: $border-radius;
+}
+
+@mixin flex-col-center-justify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin flex-content($justify) {
+    display: flex;
+    justify-content: $justify;
+  }
+
+@mixin flex-col-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @mixin flexDirectionJustify($direction, $justify) {
+    flex-direction: $direction;
+    justify-content: $justify;
+  }

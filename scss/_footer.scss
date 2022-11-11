@@ -1,3 +1,18 @@
-p {
-    color:red
+footer {
+  padding: 1rem 0;
+  text-align: center;
+  color:map-get($text-color, text-1);
+  background: $backg-color;
+    .footer__container {
+    @include flex-content(center);
+    margin-bottom: 1rem;
+    &--redes {
+      padding-left: 1rem;
+      color: map-get($text-color, text-1);
+    }
+  }
+  .autor {
+    text-decoration: none;
+    color: map-get($text-color, text-4);
+  }
 }
