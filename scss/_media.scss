@@ -38,6 +38,17 @@
   .info__container {
     flex-direction: row;
   }
+  .contacto {
+    .contacto__container {
+      display: flex;
+      flex-direction: row;
+
+      .form {
+        width: 70%;
+        margin-right: 2rem;
+      }
+    }
+  }
   footer {
     font-size: 1.5rem;
     font-weight: 600;
@@ -63,6 +74,15 @@
             }
           }
         }
+      }
+    }
+  }
+  .contacto {
+    .contacto__container {
+
+      .form {
+        width: 50%;
+        margin-right: 3rem;
       }
     }
   }

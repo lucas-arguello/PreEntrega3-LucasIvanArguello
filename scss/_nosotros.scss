@@ -36,7 +36,7 @@
     align-items:flex-start;
 
     .somos__title{
-      color: yellow;
+      color: map-get($text-color, text-3);
       padding-bottom: 1.5rem;
     }
     .somos__parrafos{

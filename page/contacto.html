@@ -75,7 +75,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="contacto">
       <section class="info__container">
         <div class="info__description">
           <p>Accede a nuestros servicios, de manera Rápida, Eficaz y Económica.</p>
@@ -92,54 +92,58 @@
           <button class="info__registro--btn">Registrate</button>
         </div>
       </section>
+
+      <div class="contacto__container">
       
-      <section class="">
-        <div class="contacto__container">
+        <section class="form">
           <h1 class="contacto__title">CONTACTO</h1>
-          <form
-            class="contacto__formulario"
-            action=""
-          >
-            <label for="nombre">Nombre y apellido:</label>
-
-            <input type="text" name="nombre" id="nombre" />
-
-            <label for="email">Email:</label>
-
-            <input type="text" name="email" id="email" />
-
-            <label for="telefono">Telefono:</label>
-
-            <input type="text" name="telefono" id="telefono" />
-            <label for="mensaje">Mensaje</label>
-
-            <textarea
-              class="contacto__area"
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
-
-            ></textarea>
-
-            <input class="contacto__btn" type="submit" value="Enviar" />
-          </form>
-        </div>
-        <div class="preguntas__container">
-          <h2 class="text-danger preguntas__title">Preguntas Frecuentes</h2>
-          <p class="preg1">¿El pago es mensual?</p>
-          <p class="resp1">No, no somos una prepaga.</p>
-          <p class="preg2">¿Necesito tener obra social, para solicitar el servicio?</p>
-          <p class="resp2">No, no trabajamos ni pertenecemos a ninguna obra social.</p>
-          <p class="preg3">¿La consulta puede ser presencial?</p>
-          <p class="resp3">
-            No, todas las consultas se realizan de manera virtual, ingresando
-            fecha y hora al truno solicitado
-          </p>
-          <p class="preg4">¿El doctor puede realizar recetas medicas?</p>
-          <p class="resp4">Si, luego de terminada la consulta se realiza la receta.</p>
-        </div>
-      </section>
+            <form
+              class="contacto__formulario"
+              action=""
+            >
+              <label class="label" for="nombre">Nombre y apellido:</label>
+  
+              <input type="text" name="nombre" id="nombre" />
+  
+              <label class="label" for="email">Email:</label>
+  
+              <input type="text" name="email" id="email" />
+  
+              <label class="label" for="telefono">Telefono:</label>
+  
+              <input type="text" name="telefono" id="telefono" />
+              <label class="label" for="mensaje">Mensaje</label>
+  
+              <textarea
+                class="contacto__area"
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+  
+              ></textarea>
+  
+              <input class="contacto__btn" type="submit" value="Enviar" />
+            </form>       
+        </section>
+        <section class="preguntas__container">
+          
+            <h2 class="preguntas__title">Preguntas Frecuentes</h2>
+            <p class="pregunta">¿El pago es mensual?</p>
+            <p class="respuesta">No, no somos una prepaga.</p>
+            <p class="pregunta">¿Necesito tener obra social, para solicitar el servicio?</p>
+            <p class="respuesta">No, no trabajamos ni pertenecemos a ninguna obra social.</p>
+            <p class="pregunta">¿La consulta puede ser presencial?</p>
+            <p class="respuesta">
+              No, todas las consultas se realizan de manera virtual, ingresando
+              fecha y hora al truno solicitado
+            </p>
+            <p class="pregunta">¿El doctor puede realizar recetas medicas?</p>
+            <p class="respuesta">Si, luego de terminada la consulta se realiza la receta.</p>
+          
+        </section> 
+      </div>
+    
 
     </main>
     <footer>

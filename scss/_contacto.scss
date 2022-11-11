@@ -4,3 +4,45 @@
   /*-- animacion ---*/
   animation: from-right 2s ease;
 }
+
+.contacto{
+  .form{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .contacto__title{
+      color: map-get($text-color, text-3);
+    }
+    .contacto__formulario{
+      display: flex;
+      flex-direction: column;
+      .label{
+        text-align: left;
+        margin-top: 1rem;
+      }
+      .contacto__btn{
+        width: 30%;
+        margin-top: 1rem;
+        @include boton-2( .5rem, 1rem, 600, 10%);
+      }
+    }
+  }
+  .preguntas__container{
+    padding: 2rem 0;
+    
+    .preguntas__title{
+      color: map-get($text-color, text-3);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .pregunta{
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    .respuesta{
+      margin-bottom: .5rem;
+      font-size: 1rem;
+    }
+  }
+}
