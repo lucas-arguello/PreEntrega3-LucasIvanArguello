@@ -1,13 +1,4 @@
-/*@keyframes from-right {
-    0% {
-      opacity: 0;
-      transform: translateX(80px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }*/
+
 
 @media (min-width: 768px) {
   header {
@@ -70,9 +61,12 @@
 
       .preguntas__container{
           width:100%;
-          
+                    
          
       }
+      
+      
+  
   }
 
     
@@ -192,6 +186,21 @@
 
     }
 
+   .profesiones__titulo{
+      margin-bottom: 3rem;
+    }
+
+
+    .profesiones__container{
+      
+     
+
+        .profesiones__card{
+          
+          
+        }
+    }
+
     .contacto__container{
      
       width: 100%;
@@ -275,32 +284,7 @@
          
   }
 
- /* .contacto {
-    .contacto__container {
-      display: flex;
-
-      .form {
-        width: 50%;
-        margin-right: 3rem;
-
-        .contacto__formulario{
-          font-size: 1.5rem;
-        }
-      }
-      .preguntas__container{
-        margin: 3rem;
-
-        .preguntas__title{
-          font-size: 1.6rem;
-        }
-
-        .pregunta{
-          font-size: 1.5rem;
-        }
-      }  
-    }
-  }*/
-
+ 
   footer {
     .footer__container {
       &--redes {
@@ -334,3 +318,14 @@
     }
   }
 }
+
+main{
+
+  .profesiones__titulo{
+    margin-bottom: 3rem;
+  }
+
+
+  
+}
+

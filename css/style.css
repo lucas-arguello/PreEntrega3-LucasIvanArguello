@@ -1,4 +1,5 @@
 * {
+  /*outline: 1px solid green;*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -244,10 +245,10 @@ main .profesiones__container .profesiones__card .profesiones__title {
   font-size: 2rem;
 }
 main .profesiones__container .profesiones__card .profesiones__img {
-  max-width: 70%;
-  max-height: 70%;
-  min-width: 70%;
-  min-height: 70%;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   margin-bottom: 1rem;
 }
 main .profesiones__container .profesiones__card .profesines__btn {
@@ -255,11 +256,6 @@ main .profesiones__container .profesiones__card .profesines__btn {
   font-size: 1rem;
   font-weight: 600;
   border-radius: 1.5rem;
-}
-main .profesiones__curri {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .contacto__container,
@@ -364,16 +360,6 @@ main .testi__container .testi__card .testi__calificasion .bi {
 }
 
 /*--*/
-/*@keyframes from-right {
-    0% {
-      opacity: 0;
-      transform: translateX(80px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }*/
 @media (min-width: 768px) {
   header .container {
     flex-direction: row;
@@ -496,6 +482,9 @@ main .testi__container .testi__card .testi__calificasion .bi {
   main .serParte__container .serParte_btn {
     font-size: 1.5rem;
   }
+  main .profesiones__titulo {
+    margin-bottom: 3rem;
+  }
   main .contacto__container {
     width: 100%;
     display: flex;
@@ -555,31 +544,6 @@ main .testi__container .testi__card .testi__calificasion .bi {
   main .testi__container .testi__tablero .testi__card {
     margin: 1%;
   }
-  /* .contacto {
-     .contacto__container {
-       display: flex;
-
-       .form {
-         width: 50%;
-         margin-right: 3rem;
-
-         .contacto__formulario{
-           font-size: 1.5rem;
-         }
-       }
-       .preguntas__container{
-         margin: 3rem;
-
-         .preguntas__title{
-           font-size: 1.6rem;
-         }
-
-         .pregunta{
-           font-size: 1.5rem;
-         }
-       }  
-     }
-   }*/
   footer .footer__container--redes {
     padding-left: 2rem;
   }
@@ -599,6 +563,10 @@ main .testi__container .testi__card .testi__calificasion .bi {
     font-size: 1.5rem;
   }
 }
+main .profesiones__titulo {
+  margin-bottom: 3rem;
+}
+
 .info__container {
   width: 100%;
   font-size: 1.5rem;
