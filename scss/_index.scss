@@ -2,97 +2,114 @@ img,
 svg {
   vertical-align: middle;
 }
-
-.info__container {
-  width: 100%;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-
-  .info__description {
+main{
+  
+  .info__container {
     width: 100%;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
-  }
-
-  .info__registro {
-    width: 100%;
-    text-align: center;
     margin-top: 2rem;
-
-    .info__registro--btn {
-      padding: 0.5rem 3rem;
-      font-size: 1.5rem;
-      border-radius: 1.5rem;
-      margin-top: 1.5rem;
+    display:flex;
+    
+  
+  
+    .info__description {
+      width: 100%;
+      margin-bottom: 2rem;
+      
     }
-  }
-}
-
-.especie__container {
-  padding-top: 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-
-  .especie__title {
-    color: map-get($text-color, text-3);
-    margin-bottom: 2rem;
-  }
-
-  .especie__subtitle {
-    margin-bottom: 1.5rem;
-    color: map-get($text-color, text-3);
-  }
-
-  .especie__container--card {
-    width: 100%;
-    padding: 5rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    .especie__card {
-      margin-bottom: 1.5rem;
-      font-size: 1.5rem;
-
-      @include flex-col-center-justify;
-
-      p {
-        color: black;
-        font-weight: bolder;
-      }
-      .especie__img {
-        margin-bottom: 2rem;
-        margin-top: 1rem;
-      }
-
-      .especie__btn {
-        @include boton-2(0.5rem 1rem, 1rem, 600, 1.5rem);
+  
+    .info__registro {
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+  
+      .info__registro--btn {
+        padding: 0.5rem 3rem;
+        font-size: 1.5rem;
+        border-radius: 1.5rem;
+        margin-top: 1.5rem;
       }
     }
   }
-}
-
-.ventajas__container {
-  .ventajas__subtitle {
-    color: map-get($text-color, text-3);
+  
+  .especie__container {
+    margin-top: 5rem;
+    padding-top: 1rem;
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .ventajas__parrafo {
-    font-size: 1.2rem;
-    line-height: 2;
     display: flex;
     flex-direction: column;
-    border: 1px solid;
-    padding: 1rem;
-
-    .ventajas__span {
-      font-weight: 500;
+  
+    .especie__title {
+      color: map-get($text-color, text-3);
+      margin-bottom: 1rem;
+    }
+  
+    .especie__subtitle {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      color: map-get($text-color, text-3);
+    }
+  
+    .especie__container--card {
+      
+      width: 100%;
+      padding: .5rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  
+      .especie__card {
+        display: inline-block;
+        margin: 1rem;
+        font-size: 1.5rem;
+  
+        @include flex-col-center-justify;
+  
+        p {
+          color: map-get($text-color, text-2);
+          font-weight: bolder;
+        }
+        .especie__img {
+          max-width: 200px;
+          min-width: 200px;
+          max-height: 200px;
+          min-height: 200px;
+          margin-bottom: 2rem;
+          margin-top: 1rem;
+        }
+  
+        .especie__btn {
+          @include boton-2(0.5rem 1rem, 1rem, 600, 1.5rem);
+        }
+      }
     }
   }
+  
+  .ventajas__container {
+    margin-top: 3rem;
+
+    .ventajas__subtitle {
+      color: map-get($text-color, text-3);
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .ventajas__parrafo {
+      font-size: 1.2rem;
+      line-height: 2;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid;
+      padding: 1rem;
+  
+      .ventajas__span {
+        color: map-get($text-color, text-5);
+        font-weight: 500;
+      }
+    }
+  }
+  
 }

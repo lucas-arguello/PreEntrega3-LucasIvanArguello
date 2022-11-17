@@ -1,63 +1,79 @@
-.info__container {
-  width: 100%;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-
-  .info__description {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .info__registro {
-    width: 100%;
-    text-align: center;
-    margin-top: 2rem;
-
-    .info__registro--btn {
-      padding: 0.5rem 3rem;
-      font-size: 1.5rem;
-      border-radius: 1.5rem;
-      margin-top: 1.5rem;
-    }
-  }
-}
-
-.somos__container{
-  /*display: flex;
-  flex-direction: column;*/
-  margin-bottom: 2rem;
+main{
+    display: inline-block;
     
-  .somos__container--info{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
+    .somos__container{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 2rem;
 
-    .somos__title{
-      color: map-get($text-color, text-3);
-      padding-bottom: 1.5rem;
+      .somos__title{
+        color: map-get($text-color, text-3);
+        padding-bottom: .5rem;
+      }
+
+      .somos__parrafo1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+
+        p{
+          margin: 0.5rem 0;
+        }
     }
-    .somos__parrafos{
+
+      .somos__img img{
+        width: 100%;
+        background:$backg-color ;
+      }
+          
+    }
+
+
+
+    .somos__parrafo2{
+      font-size: 1.2rem;
+      margin: 1.5rem 0;
+        p{
+          margin: 0.5rem 0;
+        }
+    }
+
+    .serParte__container{
       display: flex;
       flex-direction: column;
+      font-size: 1.2rem;
+      margin: 1.5rem 0;
+
+      .serParte__title{
+        text-align: center;
+        margin: 1rem;
+      }
+
+      .serParte__parrafo{
+        text-align: center;
+      }
+
+      .serParte_btn{
+        font-size: 1rem;
+        padding: .5rem;
+        width: 50%;
+        margin: 1.5rem auto;
+      }
     }
+
+
+
     
-  }
-
-
-}
-
-
-
-
-
+                     
+         
+         
+       
+       
+     }
 
 
 
-
-
-.img-fluid{
-    background:$backg-color ;
-  }

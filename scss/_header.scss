@@ -9,7 +9,7 @@ header {
     @include flex-col-center;
     &__logo {
             &--img {
-        width: 50%;
+        width: 80%;
         height: 60px;
              }
     }
@@ -20,6 +20,7 @@ header {
           padding: 0.5rem;
           list-style: none;
           &-li {
+            font-size: 1rem;
             text-decoration: none;
             color: map-get($text-color, text-1);
                &:hover {

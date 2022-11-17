@@ -5,20 +5,10 @@
 }
 
 main {
-  /*background: linear-gradient(
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6)
-    ),
-    url(../imagenes/fondo.jpg);
-
-  background-position: center 20%;
-  background-position-x: center;
-  background-position-y: 20%;
-  background-size: cover;*/
   color: white;
   background: rgb(194, 224, 149);
   margin: 0;
-  background-image: url(../imagenes/fondo.jpg);
+  background-image: linear-gradient(rgba(20, 53, 134, 0.5), rgba(20, 53, 134, 0.5)), url(../imagenes/fondo.jpg);
   background-repeat: no-repeat;
   background-position: center 20%;
   background-position-x: center;
@@ -42,7 +32,7 @@ header .container {
   flex-direction: column;
 }
 header .container__logo--img {
-  width: 50%;
+  width: 80%;
   height: 60px;
 }
 header .container .nav__list {
@@ -54,11 +44,12 @@ header .container .nav__list--items {
   list-style: none;
 }
 header .container .nav__list--items-li {
+  font-size: 1rem;
   text-decoration: none;
   color: black;
 }
 header .container .nav__list--items-li:hover {
-  color: rgb(255, 0, 179);
+  color: rgb(246, 255, 0);
 }
 
 footer {
@@ -86,81 +77,89 @@ svg {
   vertical-align: middle;
 }
 
-.info__container {
+main .info__container {
   width: 100%;
   font-size: 1.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   display: flex;
-  flex-direction: column;
 }
-.info__container .info__description {
+main .info__container .info__description {
   width: 100%;
   margin-bottom: 2rem;
 }
-.info__container .info__registro {
+main .info__container .info__registro {
   width: 100%;
   text-align: center;
   margin-top: 2rem;
 }
-.info__container .info__registro .info__registro--btn {
+main .info__container .info__registro .info__registro--btn {
   padding: 0.5rem 3rem;
   font-size: 1.5rem;
   border-radius: 1.5rem;
   margin-top: 1.5rem;
 }
-
-.especie__container {
+main .especie__container {
+  margin-top: 5rem;
   padding-top: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-.especie__container .especie__title {
-  color: yellow;
-  margin-bottom: 2rem;
+main .especie__container .especie__title {
+  color: rgb(255, 255, 0);
+  margin-bottom: 1rem;
 }
-.especie__container .especie__subtitle {
-  margin-bottom: 1.5rem;
-  color: yellow;
+main .especie__container .especie__subtitle {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: rgb(255, 255, 0);
 }
-.especie__container .especie__container--card {
+main .especie__container .especie__container--card {
   width: 100%;
-  padding: 5rem 0;
+  padding: 0.5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.especie__container .especie__container--card .especie__card {
-  margin-bottom: 1.5rem;
+main .especie__container .especie__container--card .especie__card {
+  display: inline-block;
+  margin: 1rem;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.especie__container .especie__container--card .especie__card p {
-  color: black;
+main .especie__container .especie__container--card .especie__card p {
+  color: white;
   font-weight: bolder;
 }
-.especie__container .especie__container--card .especie__card .especie__img {
+main .especie__container .especie__container--card .especie__card .especie__img {
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 200px;
+  min-height: 200px;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
-.especie__container .especie__container--card .especie__card .especie__btn {
+main .especie__container .especie__container--card .especie__card .especie__btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 1.5rem;
 }
-
-.ventajas__container .ventajas__subtitle {
-  color: yellow;
+main .ventajas__container {
+  margin-top: 3rem;
+}
+main .ventajas__container .ventajas__subtitle {
+  color: rgb(255, 255, 0);
   text-align: center;
+  font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 }
-.ventajas__container .ventajas__parrafo {
+main .ventajas__container .ventajas__parrafo {
   font-size: 1.2rem;
   line-height: 2;
   display: flex;
@@ -168,59 +167,68 @@ svg {
   border: 1px solid;
   padding: 1rem;
 }
-.ventajas__container .ventajas__parrafo .ventajas__span {
+main .ventajas__container .ventajas__parrafo .ventajas__span {
+  color: rgb(144, 221, 56);
   font-weight: 500;
 }
 
-.info__container {
+main {
+  display: inline-block;
+}
+main .somos__container {
   width: 100%;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
   display: flex;
+  align-items: center;
   flex-direction: column;
-}
-.info__container .info__description {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.info__container .info__registro {
-  width: 100%;
-  text-align: center;
   margin-top: 2rem;
 }
-.info__container .info__registro .info__registro--btn {
-  padding: 0.5rem 3rem;
-  font-size: 1.5rem;
-  border-radius: 1.5rem;
-  margin-top: 1.5rem;
+main .somos__container .somos__title {
+  color: rgb(255, 255, 0);
+  padding-bottom: 0.5rem;
 }
-
-.somos__container {
-  /*display: flex;
-  flex-direction: column;*/
-  margin-bottom: 2rem;
-}
-.somos__container .somos__container--info {
+main .somos__container .somos__parrafo1 {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
 }
-.somos__container .somos__container--info .somos__title {
-  color: yellow;
-  padding-bottom: 1.5rem;
+main .somos__container .somos__parrafo1 p {
+  margin: 0.5rem 0;
 }
-.somos__container .somos__container--info .somos__parrafos {
-  display: flex;
-  flex-direction: column;
-}
-
-.img-fluid {
+main .somos__container .somos__img img {
+  width: 100%;
   background: rgb(32, 218, 137);
+}
+main .somos__parrafo2 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+main .somos__parrafo2 p {
+  margin: 0.5rem 0;
+}
+main .serParte__container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+main .serParte__container .serParte__title {
+  text-align: center;
+  margin: 1rem;
+}
+main .serParte__container .serParte__parrafo {
+  text-align: center;
+}
+main .serParte__container .serParte_btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 50%;
+  margin: 1.5rem auto;
 }
 
 .profesiones__titulo {
-  color: yellow;
+  color: rgb(255, 255, 0);
   padding-top: 5rem;
   text-align: center;
   font-weight: 600;
@@ -256,23 +264,29 @@ svg {
   animation: from-right 2s ease;
 }
 
-.contacto .form {
+main .contacto__container {
+  width: 100%;
+}
+main .contacto__container .form {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
+  margin-top: 3rem;
 }
-.contacto .form .contacto__title {
-  color: yellow;
+main .contacto__container .form .contacto__title {
+  font-size: 2rem;
+  color: rgb(255, 255, 0);
 }
-.contacto .form .contacto__formulario {
+main .contacto__container .form .contacto__formulario {
   display: flex;
   flex-direction: column;
 }
-.contacto .form .contacto__formulario .label {
+main .contacto__container .form .contacto__formulario .contacto__formulario--label {
   text-align: left;
   margin-top: 1rem;
 }
-.contacto .form .contacto__formulario .contacto__btn {
+main .contacto__container .form .contacto__formulario .contacto__btn {
   width: 30%;
   margin-top: 1rem;
   padding: 0.5rem;
@@ -280,75 +294,72 @@ svg {
   font-weight: 600;
   border-radius: 10%;
 }
-.contacto .preguntas__container {
-  padding: 2rem 0;
+main .contacto__container .preguntas__container {
+  margin-top: 3rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
 }
-.contacto .preguntas__container .preguntas__title {
-  color: yellow;
+main .contacto__container .preguntas__container .preguntas__title {
+  color: rgb(255, 255, 0);
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
-.contacto .preguntas__container .pregunta {
+main .contacto__container .preguntas__container .pregunta {
   font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+main .contacto__container .preguntas__container .respuesta {
+  margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
-.contacto .preguntas__container .respuesta {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
 
-.info__container {
-  width: 100%;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.info__container .info__description {
-  width: 100%;
-  margin-bottom: 2rem;
+main .funciona__container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
 }
-.info__container .info__registro {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem;
+main .funciona__container .funciona__procedi .funciona__title {
+  margin: 5% 0%;
+  color: rgb(255, 255, 0);
 }
-.info__container .info__registro .info__registro--btn {
-  padding: 0.5rem 3rem;
-  font-size: 1.5rem;
-  border-radius: 1.5rem;
-  margin-top: 1.5rem;
+main .funciona__container .funciona__procedi .funciona__items li {
+  margin: 5%;
 }
-
-.funciona__container,
-.testi__container {
-  font-size: 1.5rem;
+main .funciona__container .funciona__container--video iframe {
+  max-width: 100%;
+  max-height: 100%;
 }
-
-.testi__container {
-  padding: 3rem 0 2rem 0;
+main .testi__container {
+  font-size: 1.3rem;
 }
-
-.funciona__container--texto {
-  margin: 2rem 2rem 0 0;
-  width: 100%;
+main .testi__container .testi__title {
+  color: rgb(255, 255, 0);
+  margin-bottom: 1rem;
 }
-
-.funciona__container--video {
-  width: 100%;
+main .testi__container .testi__card {
+  width: 80%;
+  margin: 10% 0%;
+  border: 0.2rem solid black;
+  border-radius: 0.7rem;
+}
+main .testi__container .testi__card .testi__card--img {
+  border-radius: 50rem;
+  margin: 2% 0%;
+}
+main .testi__container .testi__card .testi__nombre + p {
+  margin: 5% 0%;
+}
+main .testi__container .testi__card .testi__calificasion .bi {
+  color: greenyellow;
 }
 
 /*--*/
-.funciona__title,
-.funciona__items {
-  margin-bottom: 1.5rem;
-}
-
-.testi__title {
-  margin: 1rem 0;
-}
-
 /*@keyframes from-right {
     0% {
       opacity: 0;
@@ -367,35 +378,50 @@ svg {
   header .container__logo {
     width: 100%;
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 0.2rem;
   }
   header .container__logo--img {
-    width: 65%;
+    width: 90%;
   }
   header .container .nav__list--items {
-    padding: 0 1rem;
+    padding: 0 0.8rem;
     margin: 0 0.5rem;
   }
   header .container .nav__list--items-li {
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .info__container {
-    flex-direction: row;
-  }
-  .contacto .contacto__container {
+  main .contacto__container {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
-  .contacto .contacto__container .form {
-    width: 70%;
-    margin-right: 2rem;
+  main .contacto__container .form {
+    margin-right: 1rem;
+  }
+  main .contacto__container .form .contacto__title {
+    font-size: 1.5rem;
+  }
+  main .contacto__container .form .contacto__formulario .contacto__formulario--label {
+    font-size: 1.5rem;
+  }
+  main .contacto__container .form .contacto__btn {
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  main .preguntas__container {
+    width: 100%;
   }
   footer {
     font-size: 1.5rem;
     font-weight: 600;
   }
 }
+/*-------------1024----------------*/
 @media (min-width: 1024px) {
   header {
     padding: 1%;
@@ -409,14 +435,152 @@ svg {
   header .container .nav__list--items-li {
     font-size: 1.8rem;
   }
-  .contacto .contacto__container .form {
-    width: 50%;
-    margin-right: 3rem;
+  main .info__container {
+    flex-direction: row;
   }
+  main .info__container .info__description {
+    width: 100%;
+  }
+  main .info__container .info__registro {
+    margin-left: 2rem;
+    width: 70%;
+  }
+  main .especie__container .especie__title {
+    font-size: 3rem;
+  }
+  main .especie__container .especie__subtitle {
+    font-size: 2.5rem;
+  }
+  main .somos__container {
+    display: flex;
+    flex-direction: row;
+  }
+  main .somos__container .somos__subcontainer .somos__title {
+    margin-right: 1rem;
+    font-size: 3rem;
+    Width: 100%;
+    height: 70%;
+  }
+  main .somos__container .somos__subcontainer .somos__parrafo1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  main .somos__container .somos__img {
+    background: yellow;
+    margin: 3rem 1rem 0rem 1rem;
+  }
+  main .somos__container .somos__img img {
+    max-width: 550px;
+    min-width: 550px;
+    max-height: 450px;
+    min-height: 450px;
+  }
+  main .somos__parrafo2 {
+    font-size: 1.5rem;
+    margin: 2rem auto;
+  }
+  main .somos__parrafo2 p {
+    margin: 2rem auto;
+  }
+  main .serParte__container .serParte__title {
+    font-size: 2rem;
+    color: rgb(255, 255, 0);
+  }
+  main .serParte__container .serParte__parrafo {
+    font-size: 1.5rem;
+  }
+  main .serParte__container .serParte_btn {
+    font-size: 1.5rem;
+  }
+  main .contacto__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .contacto__container .form {
+    width: 100%;
+    margin: 2%;
+  }
+  main .contacto__container .form .contacto__title {
+    font-size: 2rem;
+  }
+  main .contacto__container .form .contacto__formulario {
+    display: flex;
+  }
+  main .contacto__container .form .contacto__formulario .contacto__formulario--input {
+    width: 100%;
+  }
+  main .contacto__container .form .contacto__formulario .contacto__formulario--label {
+    font-size: 1.5rem;
+  }
+  main .contacto__container .form .contacto__formulario .contacto__btn {
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  main .contacto__container .preguntas__container {
+    width: 100%;
+    margin: 2%;
+  }
+  main .contacto__container .preguntas__container .preguntas__title {
+    padding-left: 0%;
+    font-size: 2rem;
+  }
+  main .funciona__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  main .funciona__container .funciona__procedi .funciona__title {
+    font-size: 3rem;
+  }
+  main .testi__container .testi__title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  main .testi__container .testi__tablero {
+    display: flex;
+    align-items: center;
+  }
+  main .testi__container .testi__tablero .testi__card {
+    margin: 1%;
+  }
+  /* .contacto {
+     .contacto__container {
+       display: flex;
+
+       .form {
+         width: 50%;
+         margin-right: 3rem;
+
+         .contacto__formulario{
+           font-size: 1.5rem;
+         }
+       }
+       .preguntas__container{
+         margin: 3rem;
+
+         .preguntas__title{
+           font-size: 1.6rem;
+         }
+
+         .pregunta{
+           font-size: 1.5rem;
+         }
+       }  
+     }
+   }*/
   footer .footer__container--redes {
     padding-left: 2rem;
   }
 }
+/*-------------1200----------------*/
 @media (min-width: 1200px) {
   header .container__logo {
     width: 20%;
