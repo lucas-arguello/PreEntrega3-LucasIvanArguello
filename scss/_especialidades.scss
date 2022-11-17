@@ -10,7 +10,7 @@ main{
     }
     
   .profesiones__container{
-      
+
       .profesiones__card {
          display: flex;
          flex-direction: column;
@@ -22,10 +22,10 @@ main{
              font-size: 2rem;
         }
           .profesiones__img {
-              max-width: 100%;
-              max-height: 100%;
-              min-width: 100%;
-              min-height: 100%;
+              max-width: 300px;
+              max-height: 300px;
+              min-width: 300px;
+              min-height: 300px;
               margin-bottom: 1rem;
         }
           .profesines__btn {
